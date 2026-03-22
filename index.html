@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ketaki Pakhale | Portfolio</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ===================== SCROLL TO TOP BUTTON ===================== -->
+  <button id="scrollTopBtn" title="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">KP<span>.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <!-- Hamburger menu for mobile -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HOME SECTION ===================== -->
+  <section id="home" class="hero-section">
+    <div class="hero-container">
+      <!-- Left: Text content -->
+      <div class="hero-text animate-on-scroll">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Ketaki <span>Pakhale</span></h1>
+        <h2 class="hero-title">
+          <span class="typed-text" id="typedText"></span><span class="cursor-blink">|</span>
+        </h2>
+        <p class="hero-intro">
+          Motivated and detail-oriented engineering student seeking opportunities in software development and IT. 
+          Passionate about Java, problem-solving, and building real-world applications.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-code"></i> View Projects
+          </a>
+          <a href="https://github.com/ketkipakhale" target="_blank" class="btn btn-outline">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/ketakipakhale/" target="_blank" class="btn btn-outline">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
+        <!-- Stats row -->
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">6</span>
+            <span class="stat-label">Months Experience</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">8.80</span>
+            <span class="stat-label">CGPA</span>
+          </div>
+        </div>
+      </div>
+      <!-- Right: Profile image -->
+      <div class="hero-image animate-on-scroll delay-2">
+        <div class="image-wrapper">
+          <img src="profile.jpg" alt="Ketaki Pakhale" onerror="this.style.display='none'; document.getElementById('avatarFallback').style.display='flex'"/>
+          <div id="avatarFallback" class="avatar-fallback">
+            <span>KP</span>
+          </div>
+          <div class="image-ring"></div>
+        </div>
+        <!-- Floating tech badges -->
+        <div class="float-badge badge-java"><i class="fab fa-java"></i> Java</div>
+        <div class="float-badge badge-node"><i class="fab fa-node-js"></i> Node.js</div>
+        <div class="float-badge badge-db"><i class="fas fa-database"></i> MongoDB</div>
+      </div>
+    </div>
+    <!-- Background decorations -->
+    <div class="hero-bg-circle circle-1"></div>
+    <div class="hero-bg-circle circle-2"></div>
+  </section>
+
+  <!-- ===================== ABOUT SECTION ===================== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-label">Get To Know Me</span>
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-col animate-on-scroll">
+          <div class="about-img-wrapper">
+            <img src="profile.jpg" alt="Ketaki Pakhale" onerror="this.style.display='none'; document.getElementById('aboutAvatarFallback').style.display='flex'"/>
+            <div id="aboutAvatarFallback" class="avatar-fallback about-avatar">
+              <span>KP</span>
+            </div>
+          </div>
+          <div class="about-info-card">
+            <div class="info-item"><i class="fas fa-map-marker-alt"></i> Pune, Maharashtra</div>
+            <div class="info-item"><i class="fas fa-envelope"></i> pakhaleketaki@gmail.com</div>
+            <div class="info-item"><i class="fas fa-phone"></i> +91 78218 79282</div>
+            <div class="info-item"><i class="fas fa-graduation-cap"></i> B.E. E&TC · 2026</div>
+          </div>
+        </div>
+        <div class="about-text-col animate-on-scroll delay-2">
+          <h3>Electronics & Telecommunication Engineer <span class="highlight">& Java Developer</span></h3>
+          <p>
+            I am a final-year Electronics and Telecommunication Engineering student with strong interest in 
+            software development and IT systems.
+          </p>
+          <p>
+            I have hands-on experience as a Java Developer Intern at <strong>Aroma Brand Solutions</strong> 
+            (6 months) where I demonstrated professionalism, enthusiasm, and consistent growth in both 
+            technical and professional skills.
+          </p>
+          <p>
+            I enjoy solving problems, working in teams, and continuously learning new technologies. I am 
+            currently strengthening my knowledge in Data Structures & Algorithms, DBMS, Operating Systems, 
+            and Computer Networks.
+          </p>
+          <div class="about-cards">
+            <div class="about-card">
+              <i class="fas fa-laptop-code"></i>
+              <div>
+                <strong>Full-Stack Dev</strong>
+                <span>Node.js · MongoDB · REST API</span>
+              </div>
+            </div>
+            <div class="about-card">
+              <i class="fab fa-java"></i>
+              <div>
+                <strong>Java Developer</strong>
+                <span>OOP · Swing · Socket Programming</span>
+              </div>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary mt-20">
+            <i class="fas fa-paper-plane"></i> Let's Connect
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS SECTION ===================== -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-label">What I Know</span>
+        <h2 class="section-title">My <span>Skills</span></h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="skills-grid">
+
+        <!-- Technical Skills -->
+        <div class="skill-card animate-on-scroll">
+          <div class="skill-card-header">
+            <div class="skill-icon"><i class="fas fa-code"></i></div>
+            <h3>Programming</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info"><span>Java</span><span>85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>JavaScript</span><span>75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>C / C++</span><span>70%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>SQL</span><span>75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web / Full-Stack -->
+        <div class="skill-card animate-on-scroll delay-1">
+          <div class="skill-card-header">
+            <div class="skill-icon"><i class="fas fa-globe"></i></div>
+            <h3>Web & Full-Stack</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info"><span>HTML5 / CSS3</span><span>80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Node.js / Express</span><span>72%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>MongoDB</span><span>70%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>REST API / JWT</span><span>68%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="68"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Core Subjects -->
+        <div class="skill-card animate-on-scroll delay-2">
+          <div class="skill-card-header">
+            <div class="skill-icon"><i class="fas fa-book"></i></div>
+            <h3>Core Subjects</h3>
+          </div>
+          <div class="pill-grid">
+            <span class="pill"><i class="fas fa-database"></i> DBMS</span>
+            <span class="pill"><i class="fas fa-microchip"></i> OS</span>
+            <span class="pill"><i class="fas fa-network-wired"></i> CN</span>
+            <span class="pill"><i class="fas fa-sitemap"></i> DSA</span>
+            <span class="pill"><i class="fas fa-cogs"></i> SDLC</span>
+            <span class="pill"><i class="fas fa-shield-alt"></i> Encryption</span>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skill-card animate-on-scroll delay-3">
+          <div class="skill-card-header">
+            <div class="skill-icon"><i class="fas fa-users"></i></div>
+            <h3>Soft Skills</h3>
+          </div>
+          <div class="pill-grid">
+            <span class="pill"><i class="fas fa-puzzle-piece"></i> Problem Solving</span>
+            <span class="pill"><i class="fas fa-hands-helping"></i> Teamwork</span>
+            <span class="pill"><i class="fas fa-sync-alt"></i> Adaptability</span>
+            <span class="pill"><i class="fas fa-comments"></i> Communication</span>
+            <span class="pill"><i class="fas fa-brain"></i> Critical Thinking</span>
+            <span class="pill"><i class="fas fa-clock"></i> Time Management</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS SECTION ===================== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-label">What I've Built</span>
+        <h2 class="section-title">My <span>Projects</span></h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <!-- Filter buttons -->
+      <div class="filter-btns animate-on-scroll">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="java">Java</button>
+        <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+        <button class="filter-btn" data-filter="c">C</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: NeuroBridge (Featured) -->
+        <div class="project-card featured animate-on-scroll" data-category="fullstack">
+          <div class="project-top">
+            <div class="project-icon-wrap featured-icon"><i class="fas fa-brain"></i></div>
+            <span class="project-badge">⭐ Featured</span>
+          </div>
+          <h3 class="project-title">NeuroBridge — Adaptive Learning Platform</h3>
+          <p class="project-desc">
+            A full-stack web app that revolutionizes how students learn. Analyzes quiz performance in real-time, 
+            identifies knowledge gaps, recommends personalized study paths, and tracks progress through an 
+            interactive skill map.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight-item"><i class="fas fa-lock"></i> JWT + bcrypt Auth</div>
+            <div class="highlight-item"><i class="fas fa-microphone"></i> Voice Q&A (Web Speech API)</div>
+            <div class="highlight-item"><i class="fas fa-chart-bar"></i> Real-time Analytics</div>
+            <div class="highlight-item"><i class="fas fa-mobile-alt"></i> PWA — Works Offline</div>
+          </div>
+          <div class="project-tech">
+            <span>Node.js</span><span>Express.js</span><span>MongoDB</span>
+            <span>JWT</span><span>Chart.js</span><span>PWA</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/ketkipakhale/Neurobridge" target="_blank" class="btn btn-primary btn-sm">
+              <i class="fab fa-github"></i> View Code
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2: Virtual File System -->
+        <div class="project-card animate-on-scroll delay-1" data-category="c">
+          <div class="project-top">
+            <div class="project-icon-wrap"><i class="fas fa-folder-open"></i></div>
+          </div>
+          <h3 class="project-title">Customised Virtual File System</h3>
+          <p class="project-desc">
+            Simulated a Linux-like file system with a custom shell. Implemented Incore Inode Table, 
+            File Table, UAREA, and User File Descriptor Table — enabling Linux OS-level functionality 
+            on any platform.
+          </p>
+          <div class="project-tech">
+            <span>C Programming</span><span>OS Concepts</span><span>Data Structures</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/ketkipakhale" target="_blank" class="btn btn-outline btn-sm">
+              <i class="fab fa-github"></i> View Code
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3: File Packer -->
+        <div class="project-card animate-on-scroll delay-2" data-category="java">
+          <div class="project-top">
+            <div class="project-icon-wrap"><i class="fas fa-file-archive"></i></div>
+          </div>
+          <h3 class="project-title">File Packer & Unpacker with Encryption</h3>
+          <p class="project-desc">
+            Combines multiple files into one with metadata and supports encryption/decryption. 
+            Unpacking extracts data with all necessary file details. Ideal for secure data archiving.
+          </p>
+          <div class="project-tech">
+            <span>Java</span><span>Encryption</span><span>File I/O</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/ketkipakhale" target="_blank" class="btn btn-outline btn-sm">
+              <i class="fab fa-github"></i> View Code
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4: Chat Messenger -->
+        <div class="project-card animate-on-scroll delay-1" data-category="java">
+          <div class="project-top">
+            <div class="project-icon-wrap"><i class="fas fa-comments"></i></div>
+          </div>
+          <h3 class="project-title">Chat Messenger with Log Facility</h3>
+          <p class="project-desc">
+            Peer-to-peer real-time chat application with logging and cross-platform support 
+            built using Java Socket Programming. Enables seamless text-based communication 
+            between clients.
+          </p>
+          <div class="project-tech">
+            <span>Java</span><span>Socket Programming</span><span>Networking</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/ketkipakhale" target="_blank" class="btn btn-outline btn-sm">
+              <i class="fab fa-github"></i> View Code
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 5: ATM Interface -->
+        <div class="project-card animate-on-scroll delay-2" data-category="java">
+          <div class="project-top">
+            <div class="project-icon-wrap"><i class="fas fa-credit-card"></i></div>
+          </div>
+          <h3 class="project-title">ATM Interface</h3>
+          <p class="project-desc">
+            Console-based ATM simulation system built with Java. Features include withdraw, 
+            deposit, balance check, and user authentication. Developed during Java internship.
+          </p>
+          <div class="project-tech">
+            <span>Java</span><span>Java Swing</span><span>OOP</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/ketkipakhale" target="_blank" class="btn btn-outline btn-sm">
+              <i class="fab fa-github"></i> View Code
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE SECTION ===================== -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-label">Work History</span>
+        <h2 class="section-title">My <span>Experience</span></h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="timeline">
+
+        <!-- Experience: Aroma Brand Solutions -->
+        <div class="timeline-item animate-on-scroll">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-left">
+                <div class="company-logo"><i class="fab fa-java"></i></div>
+                <div>
+                  <h3 class="exp-role">Java Developer Intern</h3>
+                  <p class="exp-company">Aroma Brand Solutions</p>
+                </div>
+              </div>
+              <div class="timeline-right">
+                <span class="exp-duration"><i class="far fa-calendar-alt"></i> Sep 2025 – Feb 2026</span>
+                <span class="exp-type">6 Months · Internship</span>
+                <span class="exp-id">ID: ABS-AI25517</span>
+              </div>
+            </div>
+            <ul class="exp-list">
+              <li><i class="fas fa-chevron-right"></i> Demonstrated professionalism, enthusiasm, and dedication towards assigned responsibilities.</li>
+              <li><i class="fas fa-chevron-right"></i> Made valuable contributions with consistent commitment and significant growth in technical and professional skills.</li>
+              <li><i class="fas fa-chevron-right"></i> Supported the organization's objectives through Java-based development tasks.</li>
+              <li><i class="fas fa-chevron-right"></i> Awarded Internship Completion Certificate (Ref No: ABS/260206/ICC/87) by HR Manager Ms. L.V. Pawar.</li>
+            </ul>
+            <div class="exp-tech">
+              <span>Java</span><span>Java Swing</span><span>OOP</span><span>Problem Solving</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience: Previous Internship -->
+        <div class="timeline-item animate-on-scroll delay-2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-left">
+                <div class="company-logo"><i class="fab fa-java"></i></div>
+                <div>
+                  <h3 class="exp-role">Java Developer Intern</h3>
+                  <p class="exp-company">Internship Program</p>
+                </div>
+              </div>
+              <div class="timeline-right">
+                <span class="exp-duration"><i class="far fa-calendar-alt"></i> Nov 2024 – Dec 2024</span>
+                <span class="exp-type">Short-term · Internship</span>
+              </div>
+            </div>
+            <ul class="exp-list">
+              <li><i class="fas fa-chevron-right"></i> Developed Java applications: Number Guessing Game, ATM Interface, and Online Java Test.</li>
+              <li><i class="fas fa-chevron-right"></i> Used Java Swing for UI design and implemented authentication with user interaction flows.</li>
+              <li><i class="fas fa-chevron-right"></i> Improved logic building and application performance across 3 collaborative projects.</li>
+            </ul>
+            <div class="exp-tech">
+              <span>Java</span><span>Java Swing</span><span>Authentication</span><span>UI Design</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATION SECTION ===================== -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-label">Academic Background</span>
+        <h2 class="section-title">My <span>Education</span></h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="edu-grid">
+
+        <div class="edu-card animate-on-scroll">
+          <div class="edu-icon"><i class="fas fa-university"></i></div>
+          <div class="edu-body">
+            <h3>JSPM's Bhivrabai Sawant Institute of Technology</h3>
+            <p class="edu-degree">Bachelor of Engineering — Electronics & Telecommunication</p>
+            <p class="edu-meta"><i class="far fa-calendar-alt"></i> 2022 – 2026 &nbsp;·&nbsp; Pune, Maharashtra</p>
+          </div>
+          <div class="edu-score">
+            <span class="score-num">8.80</span>
+            <span class="score-label">CGPA / 10</span>
+          </div>
+        </div>
+
+        <div class="edu-card animate-on-scroll delay-1">
+          <div class="edu-icon"><i class="fas fa-school"></i></div>
+          <div class="edu-body">
+            <h3>Rashtriya Vidyalaya</h3>
+            <p class="edu-degree">12th — HSC (Higher Secondary Certificate)</p>
+            <p class="edu-meta"><i class="far fa-calendar-alt"></i> 2021 – 2022 &nbsp;·&nbsp; Chalisgaon, Maharashtra</p>
+          </div>
+          <div class="edu-score">
+            <span class="score-num">70.33</span>
+            <span class="score-label">Percentage %</span>
+          </div>
+        </div>
+
+        <div class="edu-card animate-on-scroll delay-2">
+          <div class="edu-icon"><i class="fas fa-book-open"></i></div>
+          <div class="edu-body">
+            <h3>A.B. Girls High School Chalisgaon</h3>
+            <p class="edu-degree">10th — SSC (Secondary School Certificate)</p>
+            <p class="edu-meta"><i class="far fa-calendar-alt"></i> 2019 – 2020 &nbsp;·&nbsp; Chalisgaon, Maharashtra</p>
+          </div>
+          <div class="edu-score">
+            <span class="score-num">96.80</span>
+            <span class="score-label">Percentage %</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CERTIFICATIONS SECTION ===================== -->
+  <section id="certifications" class="section section-alt">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-label">My Credentials</span>
+        <h2 class="section-title">Certifi<span>cations</span></h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="cert-grid">
+
+        <div class="cert-card animate-on-scroll">
+          <div class="cert-icon java-cert"><i class="fab fa-java"></i></div>
+          <div class="cert-body">
+            <h3>Java (Basic)</h3>
+            <p class="cert-issuer"><i class="fas fa-award"></i> HackerRank</p>
+            <p class="cert-date"><i class="far fa-calendar-alt"></i> Issued: July 2025</p>
+            <div class="cert-skills">
+              <span>OOP</span><span>Core Java</span><span>Problem Solving</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card animate-on-scroll delay-1">
+          <div class="cert-icon ai-cert"><i class="fas fa-robot"></i></div>
+          <div class="cert-body">
+            <h3>Introduction to Generative AI</h3>
+            <p class="cert-issuer"><i class="fas fa-award"></i> Simplilearn · Powered by Google Cloud</p>
+            <p class="cert-date"><i class="far fa-calendar-alt"></i> Issued: November 2025</p>
+            <div class="cert-skills">
+              <span>Generative AI</span><span>LLMs</span><span>Google Cloud</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card animate-on-scroll delay-2">
+          <div class="cert-icon gdsc-cert"><i class="fab fa-google"></i></div>
+          <div class="cert-body">
+            <h3>Google Developer Student Clubs</h3>
+            <p class="cert-issuer"><i class="fas fa-award"></i> GDSC — Google</p>
+            <p class="cert-date"><i class="far fa-calendar-alt"></i> 2023 – 2024</p>
+            <div class="cert-skills">
+              <span>Core Team Member</span><span>Community</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card animate-on-scroll delay-3">
+          <div class="cert-icon nptel-cert"><i class="fas fa-database"></i></div>
+          <div class="cert-body">
+            <h3>Database Management Systems</h3>
+            <p class="cert-issuer"><i class="fas fa-award"></i> NPTEL — IIT Certification</p>
+            <p class="cert-date"><i class="far fa-calendar-alt"></i> IIT Certified</p>
+            <div class="cert-skills">
+              <span>SQL</span><span>ER Modeling</span><span>Normalization</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card animate-on-scroll delay-1">
+          <div class="cert-icon intern-cert"><i class="fas fa-briefcase"></i></div>
+          <div class="cert-body">
+            <h3>Internship Completion Certificate</h3>
+            <p class="cert-issuer"><i class="fas fa-award"></i> Aroma Brand Solutions</p>
+            <p class="cert-date"><i class="far fa-calendar-alt"></i> Feb 2026 · Ref: ABS/260206/ICC/87</p>
+            <div class="cert-skills">
+              <span>Java Developer</span><span>6 Months</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT SECTION ===================== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Contact <span>Me</span></h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info animate-on-scroll">
+          <h3>Let's talk!</h3>
+          <p>I'm currently looking for internship and full-time software engineering opportunities. Feel free to reach out!</p>
+          <div class="contact-items">
+            <a href="mailto:pakhaleketaki@gmail.com" class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="ci-label">Email</span>
+                <span class="ci-value">pakhaleketaki@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:7821879282" class="contact-item">
+              <div class="contact-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <span class="ci-label">Phone</span>
+                <span class="ci-value">+91 78218 79282</span>
+              </div>
+            </a>
+            <a href="https://github.com/ketkipakhale" target="_blank" class="contact-item">
+              <div class="contact-icon"><i class="fab fa-github"></i></div>
+              <div>
+                <span class="ci-label">GitHub</span>
+                <span class="ci-value">github.com/ketkipakhale</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/ketakipakhale/" target="_blank" class="contact-item">
+              <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+              <div>
+                <span class="ci-label">LinkedIn</span>
+                <span class="ci-value">linkedin.com/in/ketakipakhale</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrap animate-on-scroll delay-2">
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="e.g. John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" placeholder="e.g. john@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" placeholder="e.g. Job Opportunity" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full-width">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <div id="formMsg" class="form-msg"></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer id="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-logo">KP<span>.</span></span>
+          <p>Electronics & Telecommunication Engineer · Java Developer · Full-Stack Enthusiast</p>
+        </div>
+        <div class="footer-links-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social-col">
+          <h4>Connect</h4>
+          <div class="footer-socials">
+            <a href="https://github.com/ketkipakhale" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ketakipakhale/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:pakhaleketaki@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 <span>Ketaki Pakhale</span>. All rights reserved.</p>
+        <p>Designed & Built with <i class="fas fa-heart"></i> by Ketaki</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
